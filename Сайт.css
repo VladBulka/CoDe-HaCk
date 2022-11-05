@@ -1,0 +1,141 @@
+
+body{
+	margin: 0;
+	font-size: 30px;
+	color: #fff;
+	line-height: 1.6;
+}
+
+}
+.header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+}
+.container {
+	width: 70%;
+	max-height: 1200px;
+	margin: 0 auto;
+}
+.logo{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+}
+.nav{
+	font-size: 16px;
+	text-transform: uupercase;
+}
+/* Делаем белый цвет и убираем подчёркивания стандартное*/
+.nav_link{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px; /* отступы между словами */
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.1s linear;
+}
+/*смена цвета при наведении */
+.nav_link:hover {
+	color: darkslateblue;
+}
+.nav_link:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+
+	opacity: 0;
+	background-color: #fce38a;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	transition: opasity 0.1 linear;
+}
+/* при наведении появляется линия */
+.nav_link:hover:after{
+	display: black;
+	opacity: 1;
+}
+.intro{
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+/* Стиль кнопки введение рамки*/
+.btn{
+	display: inline-black;
+	font-size: 14px;
+	font-weight: 700;
+	color: gray;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid gray;
+	vertical-align: top;
+	padding: 8px 30px;
+	transition: background .6s linear, color .6s linear
+}
+ 
+.btn:hover {
+	background-color: gray;
+	color: gray;
+}
+.section {
+	padding: 80px 0;
+}
+.section_header{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto 80;
+	text-align: center;
+	overflow: auto;
+
+}
+.section_suptitle{
+	font-size: 36px;
+	color: #fff;
+}
+.section_title{
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+.section_title:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 30px auto;
+	background-color: #fff;
+}
+.about{
+	display: flex;
+	justify-content: space-between;
+}
+.bgvideo{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -9999;
+}
